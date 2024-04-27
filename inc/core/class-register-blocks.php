@@ -27,6 +27,10 @@ class Register_Blocks {
 		add_action( 'init', array( $this, 'register_blocks' ) );
 
 		add_filter( 'block_type_metadata_settings', function( $settings, $metadata ) {
+			if ( is_admin() ) {
+				return $settings;
+			}
+
 			add_action( 'wp_enqueue_scripts', function() use ( $settings ) {
 				global $post;
 
