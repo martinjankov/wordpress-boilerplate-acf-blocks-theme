@@ -25,7 +25,22 @@ class Register_Blocks {
 	 */
 	private function initialize() {
 		add_action( 'init', array( $this, 'register_blocks' ) );
-		add_filter( 'should_load_separate_core_block_assets', '__return_true' );
+
+		add_filter( 'block_type_metadata_settings', function( $settings, $metadata ) {
+			add_action( 'wp_enqueue_scripts', function() use ( $settings ) {
+				global $post;
+
+				if ( has_block( $settings['name'], $post->ID ) ) {
+					foreach ( $settings['style_handles'] as $style_handle ) {
+						wp_enqueue_style( $style_handle );
+					}
+				}
+			});
+
+			$settings['style_handles'] = array();
+
+			return $settings;
+		}, 10, 2 );
 	}
 
 	/**
