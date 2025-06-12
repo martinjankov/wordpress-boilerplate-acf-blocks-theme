@@ -1,0 +1,122 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "color": {
+      "palette": [
+        { "name": "Primary", "slug": "primary", "color": "#1d4ed8" },
+        { "name": "Secondary", "slug": "secondary", "color": "#64748b" },
+        { "name": "Accent", "slug": "accent", "color": "#f59e42" },
+        { "name": "White", "slug": "white", "color": "#ffffff" },
+        { "name": "Black", "slug": "black", "color": "#000000" }
+      ],
+      "gradients": [
+        {
+          "name": "Primary to Accent",
+          "slug": "primary-accent",
+          "gradient": "linear-gradient(90deg, #1d4ed8 0%, #f59e42 100%)"
+        }
+      ],
+      "duotone": [
+        {
+          "colors": ["#000000", "#ffffff"],
+          "slug": "default",
+          "name": "Default"
+        }
+      ],
+      "custom": true
+    },
+    "spacing": {
+      "padding": true,
+      "margin": true,
+      "blockGap": true,
+      "units": ["px", "em", "rem", "%", "vw", "vh"],
+      "customSpacingSize": true,
+      "spacingSizes": [
+        { "slug": "xs", "size": "0.5rem", "name": "XS" },
+        { "slug": "sm", "size": "1rem", "name": "S" },
+        { "slug": "md", "size": "2rem", "name": "M" },
+        { "slug": "lg", "size": "4rem", "name": "L" },
+        { "slug": "xl", "size": "6rem", "name": "XL" }
+      ]
+    },
+    "border": {
+      "color": true,
+      "radius": true,
+      "width": true,
+      "style": true,
+      "customRadius": true,
+      "radiusSizes": [
+        { "slug": "none", "name": "None", "radius": "0" },
+        { "slug": "sm", "name": "Small", "radius": "4px" },
+        { "slug": "md", "name": "Medium", "radius": "12px" },
+        { "slug": "lg", "name": "Large", "radius": "24px" }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "Inter, sans-serif",
+          "name": "Inter",
+          "slug": "inter"
+        },
+        {
+          "fontFamily": "Georgia, serif",
+          "name": "Georgia",
+          "slug": "georgia"
+        }
+      ],
+      "fontSizes": [
+        { "slug": "xs", "size": "0.75rem", "name": "XS" },
+        { "slug": "sm", "size": "1rem", "name": "S" },
+        { "slug": "md", "size": "1.25rem", "name": "M" },
+        { "slug": "lg", "size": "2rem", "name": "L" },
+        { "slug": "xl", "size": "3rem", "name": "XL" }
+      ],
+      "fontWeight": true,
+      "lineHeight": true,
+      "customLineHeight": true,
+      "customFontSize": true,
+      "dropCap": true
+    },
+    "custom": {
+      "spacing": {
+        "viewport": true
+      }
+    },
+    "layout": {
+      "contentSize": "800px",
+      "wideSize": "1200px",
+      "default": { "align": "none" }
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "#ffffff",
+      "text": "#1e293b"
+    },
+    "typography": {
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "1rem",
+      "lineHeight": "1.6"
+    },
+    "elements": {
+      "button": {
+        "color": {
+          "background": "#1d4ed8",
+          "text": "#ffffff"
+        },
+        "border": {
+          "radius": "4px"
+        }
+      },
+      "heading": {
+        "typography": {
+          "fontWeight": "700"
+        }
+      }
+    }
+  },
+  "templateParts": []
+}

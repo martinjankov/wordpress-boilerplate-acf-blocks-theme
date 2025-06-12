@@ -1,0 +1,39 @@
+{
+    "name": "acf/example-block",
+    "title": "Example ACF Block",
+    "description": "Simple ACF block.",
+    "category": "text",
+    "icon": "align-left",
+    "acf": {
+        "renderTemplate": "template.php"
+    },
+	"mode": "preview",
+    "supports": {
+		"mode": true,
+        "anchor": true,
+        "align": ["left", "right", "center", "wide", "full"],
+        "alignText": true,
+        "alignContent": true,
+        "color": {
+            "text": true,
+            "background": true,
+            "gradients": true,
+            "link": true
+        },
+        "position": true,
+        "spacing": {
+            "margin": true,
+            "padding": true
+        },
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true,
+			"fontFamily": true,
+			"fontWeight": true,
+			"letterSpacing": true,
+			"textTransform": true
+		}
+    },
+    "style": ["file:./style-index.css"],
+    "script": ["file:./index.js"]
+}
