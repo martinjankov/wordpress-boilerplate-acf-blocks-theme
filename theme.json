@@ -4,6 +4,7 @@
   "settings": {
     "appearanceTools": true,
     "color": {
+			"link": true,
       "palette": [
         { "name": "Primary", "slug": "primary", "color": "#1d4ed8" },
         { "name": "Secondary", "slug": "secondary", "color": "#64748b" },
@@ -45,14 +46,7 @@
       "color": true,
       "radius": true,
       "width": true,
-      "style": true,
-      "customRadius": true,
-      "radiusSizes": [
-        { "slug": "none", "name": "None", "radius": "0" },
-        { "slug": "sm", "name": "Small", "radius": "4px" },
-        { "slug": "md", "name": "Medium", "radius": "12px" },
-        { "slug": "lg", "name": "Large", "radius": "24px" }
-      ]
+      "style": true
     },
     "typography": {
       "fontFamilies": [
@@ -69,16 +63,19 @@
       ],
       "fontSizes": [
         { "slug": "xs", "size": "0.75rem", "name": "XS" },
-        { "slug": "sm", "size": "1rem", "name": "S" },
-        { "slug": "md", "size": "1.25rem", "name": "M" },
-        { "slug": "lg", "size": "2rem", "name": "L" },
-        { "slug": "xl", "size": "3rem", "name": "XL" }
+				{ "slug": "sm", "size": "0.875rem", "name": "S" },
+				{ "slug": "md", "size": "1rem", "name": "M" },
+				{ "slug": "lg", "size": "1.25rem", "name": "L" },
+				{ "slug": "xl", "size": "1.5rem", "name": "XL" },
+				{ "slug": "2xl", "size": "2rem", "name": "2XL" },
+				{ "slug": "3xl", "size": "3rem", "name": "3XL" }
       ],
       "fontWeight": true,
       "lineHeight": true,
-      "customLineHeight": true,
       "customFontSize": true,
-      "dropCap": true
+      "dropCap": true,
+			"letterSpacing": true,
+    	"textTransform": true
     },
     "custom": {
       "spacing": {
